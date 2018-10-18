@@ -1,0 +1,32 @@
+/*Stage 1*/
+.fonts-loaded body {
+  font-family: SharpSansNo1, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+}
+
+/*Stage 2*/
+.fonts-b-loaded h1, .fonts-b-loaded h3 {
+  font-family: SharpSansNo1Semibold, sans-serif
+}
+
+
+@font-face {
+  font-family: SharpSansNo1;
+  src: url('../fonts/SharpSansNo1-Medium.woff2') format('woff2'), url('../fonts/SharpSansNo1-Medium.woff') format('woff'), url('../fonts/SharpSansNo1-Medium.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SharpSansNo1Semibold;
+  src: url('../fonts/SharpSansNo1-Semibold.woff2') format('woff2'), url('../fonts/SharpSansNo1-Semibold.woff') format('woff'), url('../fonts/SharpSansNo1-Semibold.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
