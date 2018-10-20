@@ -26,6 +26,16 @@ section.hero {
 	margin-bottom: 200px;
 }
 
+.skills {
+	text-align: center;
+	font-size: 0;
+}
+	.skills li {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 10px 30px;
+	}
+
 section.border {
 	margin-bottom: 100px;
 }
@@ -33,6 +43,14 @@ section.border {
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+		@media(min-width: 768px) {
+			section.border .container,
+			section.band .container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
 		section.border .container:before {
 			content: '';
 			border: 1px solid #EB657C;
@@ -43,6 +61,7 @@ section.border {
 			width: 85%;
 			height: 100%;
 			pointer-events: none;
+			z-index: -1;
 		}
 	section.border.intro .container:after {
 		content: '';
@@ -55,12 +74,94 @@ section.border {
 		top: -50px;
 	}
 
+.border__content img {
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+/*Intro*/
+@media(min-width: 768px) {
+	section.border.intro .container .border__content {
+		order: 2;
+	}
+	section.border.intro .container article {
+		width: 40%;
+	}
+}
+/*/Intro*/
+
+/*Trabajos*/
+@media(min-width: 768px) {
+	section.border.trabajos .container .border__text {
+		order: 2;
+		width: 40%;
+	}
+	section.border.trabajos .container .border__content {
+		width: 50%;
+	}
+}
+/*/Trabajos*/
+
+/*Blog*/
+@media(min-width: 768px) {
+	section.border.blog .container article {
+		width: 40%;
+	}
+}
+/*/Blog*/
+
 section.band {
 	padding: 50px 0;
 }
 	section.band.light-blue {
 		background: #3A405A;
 	}
+
+/*Contacto*/
+@media(min-width: 768px) {
+	section.band.contacto .container .border__text {
+		width: 50%;
+	}
+	section.band.contacto .container .border__content {
+		width: 30%;
+	}
+}
+section.band.contacto .border__title {
+	font-size: 30px;
+}
+section.band.contacto .border__sub {
+	font-size: 19px;
+}
+.contactoinfo {
+	border: 1px solid #EB657C;
+	padding: 45px 30px;
+}
+	.contactoinfo li {
+		margin-bottom: 15px;
+	}
+	.contactoinfo li:last-child {
+		margin: 0;
+	}
+	.contactoinfo li a {
+		color: #fff;
+		text-decoration: underline;
+		padding-left: 25px;
+		display: block;
+		position: relative;
+	}
+		.contactoinfo li a:before {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: #EB657C;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: calc(50% - 5px);
+		}
+/*/Contacto*/
 
 footer {
 	padding: 30px 0;

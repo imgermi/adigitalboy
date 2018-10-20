@@ -8,7 +8,7 @@
 }
 
 /*Stage 2*/
-.fonts-b-loaded h1, .fonts-b-loaded h3 {
+.fonts-b-loaded h1, .fonts-b-loaded .border__title, .fonts-b-loaded .hero__title, .fonts-b-loaded .linkbox__title  {
   font-family: SharpSansNo1Semibold, sans-serif
 }
 
@@ -29,4 +29,43 @@
 
 h2 {
   font-weight: normal;
+}
+
+.border__title {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 42px;
+  color: #fff;
+  margin: 0 0 15px;
+}
+
+.border__sub {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero__title {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 65px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: #EB657C;
+  margin-bottom: 15px;
+}
+
+.hero__sub {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  font-size: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
 }
