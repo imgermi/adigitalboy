@@ -81,6 +81,9 @@ section.border {
 }
 
 /*Intro*/
+section.border.intro img {
+	box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+}
 @media(min-width: 768px) {
 	section.border.intro .container .border__content {
 		order: 2;
