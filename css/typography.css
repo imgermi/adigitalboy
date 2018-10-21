@@ -39,6 +39,11 @@ h2 {
   color: #fff;
   margin: 0 0 15px;
 }
+  @media(max-width: 767px) {
+    .border__title {
+      font-size: 32px;
+    }
+  }
 
 .border__sub {
   font-style: normal;
@@ -47,6 +52,12 @@ h2 {
   font-size: 21px;
   color: rgba(255, 255, 255, 0.7);
 }
+  @media(max-width: 767px) {
+    .border__sub {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
 
 .hero__title {
   font-style: normal;
@@ -59,6 +70,16 @@ h2 {
   text-decoration-color: #EB657C;
   margin-bottom: 15px;
 }
+  @media(max-width: 991px) {
+    .hero__title {
+      font-size: 50px;
+    }
+  }
+  @media(max-width: 767px) {
+    .hero__title {
+      font-size: 36px;
+    }
+  }
 
 .hero__sub {
   font-style: normal;
@@ -69,3 +90,18 @@ h2 {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 15px;
 }
+  @media(max-width: 991px) {
+    .hero__sub {
+      font-size: 24px;
+      line-height: normal;
+    }
+  }
+  @media(max-width: 767px) {
+    .hero__sub {
+      font-size: 18px;
+      line-height: normal;
+    }
+      .hero__sub br {
+        display: none;
+      }
+  }
