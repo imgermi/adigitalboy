@@ -2,7 +2,8 @@
 	border: 0;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	list-style-type: none;
 	text-decoration: none;
 }
@@ -46,9 +47,15 @@ section.border {
 		@media(min-width: 768px) {
 			section.border .container,
 			section.band .container {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				align-items: center;
-				justify-content: space-between;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
 			}
 		}
 		section.border .container:before {
@@ -57,7 +64,9 @@ section.border {
 			position: absolute;
 			left: 50%;
 			top: 0;
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			        transform: translateX(-50%);
 			width: 85%;
 			height: 100%;
 			pointer-events: none;
@@ -75,7 +84,9 @@ section.border {
 		background: #EB657C;
 		position: absolute;
 		left: 50%;
-		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		        transform: translateY(-50%);
 		top: -50px;
 	}
 
@@ -87,7 +98,8 @@ section.border {
 
 /*Intro*/
 section.border.intro img {
-	box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+	        box-shadow: 0 1px 20px rgba(0,0,0,0.2);
 }
 	@media(max-width: 767px) {
 		section.border.intro img {
@@ -96,7 +108,9 @@ section.border.intro img {
 	}
 @media(min-width: 768px) {
 	section.border.intro .container .border__content {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 	section.border.intro .container article {
 		width: 40%;
@@ -107,7 +121,9 @@ section.border.intro img {
 /*Trabajos*/
 @media(min-width: 768px) {
 	section.border.trabajos .container .border__text {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 		width: 40%;
 	}
 	section.border.trabajos .container .border__content {

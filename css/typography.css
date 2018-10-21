@@ -67,7 +67,8 @@ h2 {
   text-align: center;
   color: #FFFFFF;
   text-decoration: underline;
-  text-decoration-color: #EB657C;
+  -webkit-text-decoration-color: #EB657C;
+          text-decoration-color: #EB657C;
   margin-bottom: 15px;
 }
   @media(max-width: 991px) {
@@ -105,3 +106,39 @@ h2 {
         display: none;
       }
   }
+
+#titleAnim {
+  height: 1.4em;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+  #titleAnim:before {
+    content: '';
+    background-color: #EB657C;
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: -5px;
+    -webkit-animation: blink 500ms linear infinite;
+            animation: blink 500ms linear infinite;
+  }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
