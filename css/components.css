@@ -43,3 +43,26 @@
 	.linkbox:hover {
 		opacity: 0.8;
 	}
+
+.border__btn {
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 16px 30px;
+	border: 1px solid #EB657C;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -27px;
+	background: #212D40;
+	transition: all 200ms ease-in;
+}
+	.border__btn:hover {
+		background: #EB657C;
+	}

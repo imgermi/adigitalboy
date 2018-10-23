@@ -107,13 +107,13 @@ h2 {
       }
   }
 
-#titleAnim {
+.anim {
   height: 1.4em;
   position: relative;
   display: inline-block;
   vertical-align: middle;
 }
-  #titleAnim:before {
+  .anim:before {
     content: '';
     background-color: #EB657C;
     width: 1px;
