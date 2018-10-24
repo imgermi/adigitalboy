@@ -126,6 +126,24 @@ section.border.intro img {
 }
 /*/Intro*/
 
+/*Agencia*/
+section.border.agencia img {
+	-webkit-box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+	@media(max-width: 767px) {
+		section.border.agencia img {
+			margin-bottom: 35px;
+		}
+	}
+@media(min-width: 768px) {
+	section.border.agencia .container article {
+		width: 45%;
+	}
+}
+/*/Agencia*/
+
 /*Trabajos*/
 @media(min-width: 768px) {
 	section.border.trabajos .container .border__text {

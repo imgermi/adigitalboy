@@ -64,6 +64,39 @@ setInterval(function(){
 
 }, 120);
 
+var wordsAgencia = ['Una (casi) agencia.', 'Un equipo.', 'Who knows.'],
+    wordWrapperAgencia = document.getElementById('agenciaAnim'),
+    wordWrapperAgenciaContent = wordWrapperAgencia.innerHTML,
+    addingWordAgencia = false,
+    counterAgencia = 1;
+
+setInterval(function(){
+
+  if(wordWrapperAgenciaContent.length > 0 && !addingWordAgencia ) {
+    wordWrapperAgencia.innerHTML = wordWrapperAgenciaContent.slice(0, -1);
+    wordWrapperAgenciaContent = wordWrapperAgencia.innerHTML;
+  } else {
+    addingWordAgencia = true;
+  }
+
+  if( addingWordAgencia ){
+    if( wordWrapperAgenciaContent.length < wordsAgencia[counterAgencia].length  ) {
+      wordWrapperAgencia.innerHTML = wordsAgencia[counterAgencia].slice(0, wordWrapperAgenciaContent.length + 1);
+      wordWrapperAgenciaContent = wordWrapperAgencia.innerHTML;
+    } else {
+      if( counterAgencia < wordsAgencia.length) {
+        counterAgencia ++
+      }
+      addingWordAgencia = false;
+    }
+  }
+
+  if( counterAgencia == wordsAgencia.length) {
+    counterAgencia = 0;
+  }
+
+}, 120);
+
 var wordsTrabajos = ['Trabajos.', 'Experiencias.', 'Algunos proyectos.'],
     wordWrapperTrabajos = document.getElementById('trabajosAnim'),
     wordWrapperTrabajosContent = wordWrapperTrabajos.innerHTML,
