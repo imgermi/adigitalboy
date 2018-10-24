@@ -62,6 +62,7 @@
 	bottom: -27px;
 	background: #212D40;
 	transition: all 200ms ease-in;
+	cursor: pointer;
 }
 	.border__btn:hover {
 		background: #EB657C;

@@ -31,7 +31,7 @@ setInterval(function(){
 
 }, 120);
 
-var wordsIntro = ['Hola.', 'Un gusto.', '¿Quién es este sujeto?'],
+var wordsIntro = ['Hola.', 'Un gusto.', '¿Quién soy?'],
     wordWrapperIntro = document.getElementById('introAnim'),
     wordWrapperIntroContent = wordWrapperIntro.innerHTML,
     addingWordIntro = false,
@@ -130,7 +130,7 @@ setInterval(function(){
 
 }, 120);
 
-var wordsContacto = ['Charlemos cuando quieras.', 'Salvo que envíes audios de más de 3 minutos.', 'Por favor, eso no.'],
+var wordsContacto = ['Charlemos cuando quieras.', 'Con una condición.', 'No envíes audios largos.'],
     wordWrapperContacto = document.getElementById('contactoAnim'),
     wordWrapperContactoContent = wordWrapperContacto.innerHTML,
     addingWordContacto = false,
@@ -162,3 +162,14 @@ setInterval(function(){
   }
 
 }, 120);
+
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
