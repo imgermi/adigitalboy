@@ -64,7 +64,7 @@ setInterval(function(){
 
 }, 120);
 
-var wordsAgencia = ['Una (casi) agencia.', 'Un equipo.', 'Who knows.'],
+var wordsAgencia = ['Una agencia.', 'Un equipo.', 'WhoKnows.'],
     wordWrapperAgencia = document.getElementById('agenciaAnim'),
     wordWrapperAgenciaContent = wordWrapperAgencia.innerHTML,
     addingWordAgencia = false,
